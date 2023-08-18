@@ -1,0 +1,157 @@
+#moreFunc {
+  width: 90vw;
+  height: 10vh;
+
+  margin: 0 auto 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  #deleteDriver {
+    @include driverListFuncBtn;
+  }
+
+  #searchDriver {
+    width: 20rem;
+    height: 40px;
+
+    padding-bottom: 0.5rem;
+
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #addDriverAnc {
+    @include driverListFuncBtn;
+
+    line-height: 3.5rem;
+
+    @include mobile {
+      line-height: 6rem;
+    }
+  }
+}
+
+#sortList {
+  width: 90vw;
+  height: auto;
+
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  #driversListHeaders {
+    border: 1px solid;
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    .driversListHeader {
+      width: 12rem;
+      height: 50px;
+
+      line-height: 50px;
+      text-align: start;
+
+      color: $black;
+      background-color: $white;
+    }
+
+    .checkBoxHeader {
+      width: 6rem;
+    }
+
+    .largeHeader {
+      width: 15rem;
+    }
+  }
+
+  #drivers {
+    margin-bottom: 50px;
+    .driver {
+      height: 9rem;
+
+      border-bottom: 1px solid;
+
+      display: flex;
+      align-items: center;
+
+      transition: 0.3s;
+
+      .driverImg {
+        width: 5.5rem;
+        height: 5.5rem;
+
+        border-radius: 50%;
+      }
+
+      .driverData {
+        width: 12rem;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        .confirmAnc {
+          text-decoration: none;
+          font-weight: 700;
+
+          color: $gray;
+          cursor: pointer;
+        }
+
+        .driverProfileAnc {
+          text-decoration: none;
+          font-weight: 700;
+
+          color: $gray;
+          cursor: pointer;
+        }
+      }
+
+      .checkData {
+        width: 6rem;
+
+        display: flex;
+        justify-content: flex-end;
+
+        input {
+          width: 22px;
+          height: 22px;
+
+          appearance: none;
+
+          margin-right: 1rem;
+          border: 1px solid $white;
+          border-radius: 15%;
+
+          cursor: pointer;
+
+          transition: 0.2s;
+
+          &:checked {
+            background: $gray;
+          }
+
+          @include tablet {
+            width: 17px;
+            height: 17px;
+          }
+
+          @include mobile {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+
+      .largeWidthData {
+        width: 15rem;
+      }
+    }
+  }
+}

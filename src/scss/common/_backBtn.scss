@@ -1,0 +1,21 @@
+#back {
+  width: 80vw;
+  height: 10vh;
+
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 10vh;
+  text-align: end;
+
+  color: $gray;
+
+  button {
+    width: 90px;
+    height: 30px;
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+}
