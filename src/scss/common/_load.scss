@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
 
+  font-family: "Black Han Sans", sans-serif;
+
   background-color: $brandColor;
 
   #load-logo {
@@ -31,7 +33,7 @@
   }
 
   #load-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     @include tablet {
       font-size: 3.5rem;
@@ -42,5 +44,9 @@
     }
 
     @include fadeInAni();
+
+    span {
+      color: $alert;
+    }
   }
 }

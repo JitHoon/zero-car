@@ -1,3 +1,6 @@
+//import font style
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap");
+
 // import common mixin
 @import "./common/mixin/_insuranceInfo.scss";
 @import "./common/mixin/_fadeInAni.scss";
@@ -7,12 +10,12 @@
 // import common
 @import "./common/_variables.scss";
 @import "./common/_htmlTag.scss";
+@import "./common/_load.scss";
 @import "./common/_title.scss";
 @import "./common/_inputFile.scss";
 @import "./common/_backBtn.scss";
 
 // import screens
-@import "./screens/_load.scss";
 @import "./screens/_adminLogin.scss";
 @import "./screens/_driverList.scss";
 @import "./screens/_addDriver.scss";
