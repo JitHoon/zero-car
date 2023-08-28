@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="font-size: 1.1vw" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <title>운전자 보험금 기다림 제로, zero car!</title>
+    <link rel="icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../public/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="load">
+      <img id="load-logo" src="../imgs/zero-car-logo.png" alt="zero-car" />
+      <h1 id="load-title">보험자 관리, 빠르게 진행시켜! <span>영 차!</span></h1>
+    </div>
+
+    <h2 id="title">운전자 보험금 기다림 제로, Zero Car!</h2>
+
+    <div id="moreFunc">
+      <button id="deleteDriver" class="func">선택 삭제</button>
+
+      <input type="search" id="searchDriver" placeholder="보험자 이름 검색" />
+
+      <a id="addDriverAnc" class="func">추가</a>
+    </div>
+
+    <table id="sortList">
+      <thead id="driversListHeaders">
+        <tr>
+          <th class="driversListHeader checkBoxHeader"></th>
+          <th class="driversListHeader largeHeader"></th>
+          <th class="driversListHeader">이름</th>
+          <th class="driversListHeader">생년 월일</th>
+          <th class="driversListHeader">보험 상품</th>
+          <th class="driversListHeader">가입 기간</th>
+          <th class="driversListHeader largeHeader">보험금 심사</th>
+          <th class="driversListHeader largeHeader"></th>
+        </tr>
+      </thead>
+      <tbody id="drivers"></tbody>
+    </table>
+  </body>
+  <script defer src="../../public/js/main.js"></script>
+</html>

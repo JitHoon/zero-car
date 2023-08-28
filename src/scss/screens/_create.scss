@@ -1,0 +1,79 @@
+#addDriver {
+  width: 50rem;
+  max-width: 500px;
+  min-width: 300px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  font-size: 15px;
+  color: $white;
+
+  h2 {
+    margin: 3rem 0;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  #driverImgBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #driverImg {
+      width: 10rem;
+      height: 10rem;
+
+      border: 1px solid $white;
+      border-radius: 50%;
+
+      color: gray;
+      background-color: gray;
+    }
+  }
+
+  input {
+    margin: 30px 0;
+    padding-bottom: 10px;
+
+    transition: border-color 0.3s ease-in-out;
+
+    &:not([type="submit"]) {
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    &[type="submit"] {
+      padding: 20px 0px;
+
+      font-weight: 700;
+
+      transition: 0.3s;
+
+      &:hover {
+        border-radius: 10px;
+
+        color: $white;
+        background-color: $black;
+      }
+    }
+  }
+
+  #insuranceProduct {
+    width: 150px;
+    height: 30px;
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+}
